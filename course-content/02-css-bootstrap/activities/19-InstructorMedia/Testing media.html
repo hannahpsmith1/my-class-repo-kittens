@@ -1,0 +1,62 @@
+<!-- Media Query Demo (check the CSS page) -->
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <style>
+    .page-header {
+  display: flex;
+}
+
+h1,
+.nav {
+  flex: 1;
+  vertical-align: top;
+  margin-top: 0 !important;
+  color:red
+}
+
+.nav {
+  text-align: right;
+}
+
+.nav.nav-pills>li {
+  float: none;
+  display: inline-block;
+}
+</style>
+
+<style>
+    @media screen and (max-width: 640px;) {
+      h1,
+      .nav {
+        font-size: 40px;
+        color: turquoise !important 
+        }
+    }
+  
+  </style>
+    
+    <div class="container">
+        <div class="page-header media">
+          <h1>Title <small>Secondary Text</small></h1>
+          <ul class="nav nav-pills">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+</body>
+
+</html>
