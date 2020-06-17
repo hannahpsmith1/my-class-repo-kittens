@@ -24,12 +24,21 @@
 
       // How do we print out every single student in Row 1?
 
+        for (var i = 0; i < studentsRow1.length; i++) {
+        console.log( studentsRow1[i]);
+        }
+
+        // console.log("twitter");
 
       // How do we print out every student in Row 2 whose first name begins with J?
-
-
+        for (var i =0; i<studentsRow2.length; i++){
+        if (studentsRow2[i].chartAt(0) === "J"){
+          console.log ("Starts with a J" +studentsRow2[i]);
+        }
+        }
       // Using the entireClass array, how do we access the second student in row 3?
-
+        console.log ("Second Student in Row 3.");
+        console.log (entireClass [2] [1]);
 
       // Using the entireClass array, how do we access the third student in row 2?
 
